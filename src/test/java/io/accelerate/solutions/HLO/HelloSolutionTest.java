@@ -21,7 +21,7 @@ public class HelloSolutionTest {
 
     @Test
     public void testHello() {
-        assertThat(underTest.hello("Name1"), equalTo("Hello, World!"));
+        assertThat(underTest.hello("John"), equalTo("Hello, John!"));
     }
 
     @ParameterizedTest
@@ -32,9 +32,8 @@ public class HelloSolutionTest {
 
     private static Stream<Arguments> testHelloStrings() {
         return Stream.of(
-                Arguments.of("Name A", "Hello, World!"),
-                Arguments.of("FirstName lastName", "Hello, World!")
+                Arguments.of("Name A", "Hello, Name A!"),
+                Arguments.of("FirstName lastName", "Hello, FirstName lastName!")
         );
     }
 }
-
