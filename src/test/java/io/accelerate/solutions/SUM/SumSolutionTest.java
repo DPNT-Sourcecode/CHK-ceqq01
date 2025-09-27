@@ -35,7 +35,8 @@ public class SumSolutionTest {
         return Stream.of(
                 Arguments.of(1, 2, 3),
                 Arguments.of(10, 20, 30),
-                Arguments.of(5, 10, 15)
+                Arguments.of(5, 10, 15),
+                Arguments.of(100, 200, 300)
         );
     }
 }
