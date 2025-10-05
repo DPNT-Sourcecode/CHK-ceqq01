@@ -29,7 +29,7 @@ public class CheckoutSolutionTest {
     @ParameterizedTest
     @EmptySource
     public void whenEmptyTrolley_thenZero(String skus) {
-        assertThat(underTest.checkout(skus), equalTo(-1));
+        assertThat(underTest.checkout(skus), equalTo(0));
     }
 
     @ParameterizedTest
@@ -68,3 +68,4 @@ public class CheckoutSolutionTest {
         );
     }
 }
+

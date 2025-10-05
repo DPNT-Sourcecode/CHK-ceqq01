@@ -21,6 +21,9 @@ public class CheckoutSolution {
         if (skus == null) {
             return -1;
         }
+        if (skus.isEmpty()) {
+            return 0;
+        }
         String[] skuArray = skus.split("");
         if (Arrays.stream(skuArray)
                 .anyMatch(not(priceData::containsKey))) {
@@ -63,3 +66,4 @@ public class CheckoutSolution {
         return result;
     }
 }
+
